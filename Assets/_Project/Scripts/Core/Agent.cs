@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Agent : MonoBehaviour, IVelocityProvider
+public class Agent : MonoBehaviour
 {
     public Vector3 Velocity => _velocity;
 

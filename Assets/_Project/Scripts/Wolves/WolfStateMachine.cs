@@ -20,8 +20,6 @@ public class WolfStateMachine
             _wolf.SetLastKnownPosition(seen.transform.position);
             if (!(_fsm.CurrentState is WolfChaseState))
                 _fsm.ChangeState(WolfStateType.Chase);
-            // Re-send a fresh snapshot only when it was actually perceived,
-            // and only at the configurable cooldown interval.
             _wolf.EmitHowl(seen.transform.position);
         }
         else if (_fsm.CurrentState is WolfChaseState)

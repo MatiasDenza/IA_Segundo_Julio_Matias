@@ -34,7 +34,6 @@ public class Hunter : Agent
     private Renderer[] _renderers;
     private Collider[] _colliders;
     private AgentStatusLabel _label;
-    private Vector3 _lastKnownTarget;
     private Boid _lastHuntedBoid;
 
     public float MaxSpeed => _maxSpeed;
